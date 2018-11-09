@@ -16,8 +16,8 @@
   const request = new XMLHttpRequest() // create the object
   request.addEventListener('load', receiveData) // attach a function to the 'load' event
   request.open('GET', 'jumbotron.html') // where should this request be made to?
-                                        // in this case, we are making an HTTP GET request
-                                        // to the 'jumbotron.html' file
+  // in this case, we are making an HTTP GET request
+  // to the 'jumbotron.html' file
 
   // add a click event to our button
   const buttonEl = document.getElementById('loadBtn1')
@@ -27,7 +27,7 @@
   function clickBtn (evt) {
     console.info('button clicked! fetching "jumbotron.html" now…')
     request.send() // <-- this initializes the HTTP request for 'jumbotron.html'
-                   // Note that the event listener for this request was attached on Line 17
+    // Note that the event listener for this request was attached on Line 17
   }
 
   // this function fires when the request has completed
